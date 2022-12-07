@@ -7,6 +7,8 @@
 #include <string.h>
 #include <unistd.h>
 
+#include "test.h"
+
 typedef struct {
   char* buffer;
   size_t buffer_length;
@@ -851,6 +853,7 @@ ExecuteResult execute_statement(Statement* statement, Table* table) {
 }
 
 int main(int argc, char* argv[]) {
+  add(3,8);
   if (argc < 2) {
     printf("Must supply a database filename.\n");
     exit(EXIT_FAILURE);
