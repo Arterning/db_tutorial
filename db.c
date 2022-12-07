@@ -509,7 +509,7 @@ InputBuffer* new_input_buffer() {
   return input_buffer;
 }
 
-void print_prompt() { printf("db > "); }
+void print_prompt() { printf("Welcome to my db > "); }
 
 void read_input(InputBuffer* input_buffer) {
   ssize_t bytes_read =
