@@ -8,5 +8,7 @@ typedef struct
 	unsigned char c[5];
 } testStruct;
 
+//函数在C语言中需要先声明后使用 否则会出现Implicit Declaration of Function 警告
+int printBoyNextDoor();
 #endif
 
